@@ -1,0 +1,201 @@
+<html>
+<head> <title>Biscotti</title> 
+<style>
+
+.blocco{
+dispay:block;
+height:140px;
+background-color:none;
+}
+#cre {
+  position: absolute;
+  border: 1px solid white;
+  background-color:rgba(255,200,200,0.5);  
+  width: 100%;
+  height: 45px;
+  top: 130px;
+  left: 0;
+  right: 0;
+  display:block;
+}
+.menu{
+  text-align: center;
+  text-decoration: none;
+  font-family:papyrus;
+  font-size: 25px;
+  color: black;
+}
+.menu:hover{
+color: white;
+}
+#men td:hover {
+background-color:rgba(205, 50, 91,0.5);
+}
+.titolo{
+font-family:mistral;
+color:black;
+font-size:60px;
+}
+
+.logo{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:130px;
+background-image: url('barra.png');
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#avanti,#indietro{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #cd325b;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  width:100px;
+  height:50px;
+  cursor: pointer;
+  margin: 2px;
+  font-family:papyrus;
+}
+
+#avanti:active,#indietro:active{
+color:#cd325b;
+background-color: white
+}
+
+#avanti span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+#indietro span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+#avanti span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px; 
+transition: 0.4s;
+}
+
+#avanti:hover span {
+  padding-right: 25px;
+}
+
+#avanti:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#indietro span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.4s;
+}
+
+#indietro:hover span {
+  padding-left: 25px;
+}
+
+#indietro:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+</style>
+</head>
+<body onload="but()" background="back2.jpg" marginheight="70px" marginwidth="70px" >
+<div class="blocco" ></div>
+<div class="logo"><table width="100%"><tr height="130px"><td width="100%"  align=center class="titolo">Cenere<font size=4>&#174;</font></td></tr></table></div>
+<div id="cre"><table align=center width="100%" id="men"><tr>
+<td width="25%"  align=center> <a href="primapag.html" class="menu"><div width="25%">HOME</div></a></td>
+<td width="25%" align=center> <a href="ricette.html" class="menu"><div width="25%">RICETTE</div></a></td>
+<td width="25%" align=center> <a href="quiz.html" class="menu"><div width="25%">QUIZ</div></a></td>
+<td width="25%" align=center> <a href="eventi.html" class="menu"><div width="25%">EVENTI</div></a></td>
+</tr></table></div>
+<img src="logob.png" height="200px" class="center"> 
+<p align=center>
+<table width=100% ><tr><td valig=middle>
+<button id="indietro" onclick="action()"><span>indietro</span></button>
+</td>
+<td valig=middle>
+<p align=center>
+ <img src="biscotti1.jpg" id="prima" width="832px" height="935px" alt="dolci">
+</p>
+</td>
+<td><button id="avanti" onclick="action()"><span>avanti</span></button></td>
+</tr></table>
+</p>
+<map name="dolci">
+  <area shape="rect" coords="85,71,375,296" href="fave_morti.html" alt="Fave della Morte">
+  <area shape="rect" coords="465,71,751,296" href="cantucci.html" alt="Cantucci">
+  <area shape="rect" coords="85,353,375,581" href="savoiardi.html" alt="Savoiardi">
+  <area shape="rect" coords="465,353,751,581" href="pan_zen.html" alt="Biscotti Pan di Zenzero">
+  <area shape="rect" coords="85,636,375,863" href="zimtsterne.html" alt="Zimtstrene">
+  <area shape="rect" coords="465,636,751,863" href="canestrelli.html" alt="Canestrelli">
+</map> 
+<map name="dolci1">
+  <area shape="rect" coords="85,71,375,296" href="lingue_gatto.html" alt="Lingue di Gatto">
+  <area shape="rect" coords="465,71,751,296" href="cookies.html" alt="Cookies">
+  <area shape="rect" coords="85,353,375,581" href="bruttibuoni.html" alt="Brutti ma Buoni">
+  <area shape="rect" coords="465,353,751,581" href="krumiri.html" alt="Krumiri">
+</map> 
+
+<script>
+ var hidden = false;
+    function action() {
+        hidden = !hidden;
+        if(hidden) {
+            document.getElementById('avanti').style.visibility = 'hidden';
+document.getElementById('indietro').style.visibility = 'visible';
+document.getElementById('prima').src='biscotti2.jpg';
+document.getElementById('prima').useMap = "#dolci1";
+        } else {
+            document.getElementById('avanti').style.visibility = 'visible';
+document.getElementById('indietro').style.visibility = 'hidden';
+document.getElementById('prima').src='biscotti1.jpg';
+document.getElementById('prima').useMap = "#dolci";
+        }
+}
+
+function but(){
+document.getElementById('avanti').style.visibility = 'visible';
+document.getElementById('indietro').style.visibility = 'hidden';
+document.getElementById('prima').useMap = "#dolci";
+}
+
+var mymenu = document.getElementById("cre"); 
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+    mymenu.style.top = "0";
+    mymenu.style.position="fixed";
+  } else {
+    mymenu.style.top = "130px";
+    mymenu.style.position="absolute";
+  }
+}
+</script>
+
+</body>
+</html>
