@@ -1,0 +1,255 @@
+<html>
+<head> <title>Canestrelli</title> 
+
+<style>
+#cre {
+  position: absolute;
+  border: 1px solid white;
+  background-color:rgba(255,200,200,0.5);  
+  width: 100%;
+  height: 45px;
+  top: 130px;
+  left: 0;
+  right: 0;
+  display:block;
+}
+.menu{
+  text-align: center;
+  text-decoration: none;
+  font-family:papyrus;
+  font-size: 25px;
+  color: black;
+}
+.menu:hover{
+color: white;
+}
+#men td:hover {
+background-color:rgba(205, 50, 91,0.5);
+}
+.titolo{
+font-family:mistral;
+color:black;
+font-size:60px;
+}
+
+.logo{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:130px;
+background-image: url('barra.png');
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #cd325b;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.blocco{
+dispay:block;
+height:140px;
+background-color:none;
+}
+
+#top:hover {
+  background-color:white;
+  color:#cd325b;
+}
+#inizio {
+  border-collapse: collapse;
+background-color:#F5C5DB;
+}
+
+#inizio td {
+  border: 1px solid #372315;
+  padding: 20px;
+}
+
+
+#inizio tr:hover {
+background-color: #cd325b; color:white;
+}
+
+.butt {
+  background-color: white; 
+  border:2px solid #cd325b;
+  color: black;
+  padding: 11px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+font-family:papyrus;
+}
+
+.butt:hover {
+  background-color: #cd325b;
+  color: white;
+}
+</style>
+</head>
+
+<body background="back2.jpg" marginheight="70px" marginwidth="70px">
+<div class="blocco" ></div>
+<div class="logo"><table width="100%"><tr height="130px"><td width="100%"  align=center class="titolo">Cenere<font size=4>&#174;</font></td></tr></table></div>
+<div id="cre"><table align=center width="100%" id="men"><tr>
+<td width="25%"  align=center> <a href="primapag.html" class="menu"><div width="25%">HOME</div></a></td>
+<td width="25%" align=center> <a href="ricette.html" class="menu"><div width="25%">RICETTE</div></a></td>
+<td width="25%" align=center> <a href="quiz.html" class="menu"><div width="25%">QUIZ</div></a></td>
+<td width="25%" align=center> <a href="eventi.html" class="menu"><div width="25%">EVENTI</div></a></td>
+</tr></table></div>
+<a href="biscotti.html" target="_self"> <img src="freccia1.png" height="90px" width="90px" title="Torna indietro"> </a>
+<p align=center>
+<table background="foglio5.jpg" cellpadding=50px width=85%><tr><td>
+<p align=right><button onclick="stampa_id('da_stampare');" class="butt" title="Ottieni PDF">Stampa</button></p>
+<div id="da_stampare">
+<font face="papyrus" size="4" color="black">
+<h1>Canestrelli</h1>
+<h2>Origini</h2>
+<p align=justify>
+I canestrelli sono dolci popolari, le cui origini sono antichissime. Nel Canavese e nella Valle di Susa venivano preparati 
+sin dal Medioevo con il nome di nebule, probabilmente dalle gilde dei produttori di ostie.<br> 
+Si offrivano in occasione di matrimoni, battesimi, feste religiose, carnevale.<br>
+I canestrelli di pasta frolla, probabilmente più recenti, appartengono alla tradizione Ligure e nella ricetta 
+attuale hanno una precisa collocazione sia témporale sia geografica: gli inizi dell’ottocento in Torriglia,
+antica capitale appenninica dei feudi imperiali dei Doria Pamphilj (che si estendevano in Val Trebbia fino all'area oggi piacentina) che è tuttora il centro principale di produzione di questo dolce nella classica ricetta. 
+</p>
+
+<font face="papyrus" size="4" color="black">
+<h2>Ricetta</h2>
+<table id="inizio" style=font-family:papyrus>
+<tr><td>Difficoltà</td><td>Facile</td></tr>
+<tr><td>Tempo di preparazione</td><td>10 Minuti</td></tr>
+<tr><td>Tempo di cottura</td><td>12 Minuti</td></tr>
+<tr><td>Porzioni</td><td>25 Pezzi</td></tr>
+<tr><td>Metodo di cottura</td><td>Forno</td></tr>
+<tr><td>Cucina</td><td>Italiana</td></tr>
+</table>
+<br>
+
+<h2>Ingredienti</h2>
+
+<h3>Per l'impasto</h3>
+<ul type="circle">
+<li>100g di Farina</li>
+<li>100g Fecola di patate</li>
+<li>2 Tuorli sodi</li>
+<li>130g Burro</li>
+<li>60g Zucchero semolato</li>
+<li>Buccia di un limone</li>
+<li>Vaniglia (1 bustina oppure 1 cucchiaio di estratto)</li>
+<li>un pizzico di Sale</li>
+</ul>
+      
+<h3>Per decorare</h3>
+<ul type="circle">
+<li>Zucchero a velo</li>
+</ul>
+    
+<h2>Preparazione dei Canestrelli </h2>
+
+<h3>Impasto</h3>
+<p align=justify>
+Prima di tutto bollite le uova per ricavare i tuorli sodi, basteranno 5 – 7 minuti.<br>
+Nel frattempo montate il burro con lo zucchero, la vaniglia, il sale e la buccia grattugiata di limone per
+ 2 minuti fino ad ottenere un composto spumoso e chiaro.<br>
+Sbucciate le uova, ricavate i tuorli sodi, fate intiepidire. Infine sbriciolate nel composto di burro .<br>
+Frullate i tuorli sodi con il composto di burro fino ad ottenere una crema gialla priva di grumi e perfettamente compatta.
+</p>
+<p align=center>
+<img src="canestre.jpg" height="300px">   
+</p>
+<p align=justify>
+Aggiungete infine fecola e farina. Compattate qualche secondo con le mani.
+</p>
+<p align=center>
+<img src="canestre2.jpg" height="300px">
+</p>
+<p align=justify>
+Sigillate l’impasto in una pellicola e lasciate raffreddare per almeno 1 – 2 h deve risultare freddo ma malleabile.<br>
+Stendete su un piano di lavoro leggermente infarinato allo spessore di 5 – 6 mm. la sfoglia dev’essere fredda e bella 
+dura, in modo da ricavare frollini dai bordi perfetti.<br>
+Ritagliate i vostri canestrelli con l’apposito stampino per canestrelli oppure con un taglia biscotti a forma di
+ fiore che poi dovrete successivamente forare al centro.<br>
+Man mano che li realizzate disponeteli in una teglia foderata di carta da forno alla distanza di almeno 5 cm.<br>
+Riponete in frigo la teglia per 15 minuti. 
+</p>
+<p align=center>
+<img src="canestre3.jpg" height="300px">
+
+</p>
+<h3>Cottura</h3>
+<p align=justify>
+ Intanto azionate il forno a 180°. Cuocete in forno statico una teglia per volta nella parte centrale del forno per 10 – 11 minuti;
+ non devono dorarsi troppo.<br>
+Infine sfornate delicatamente. Inizialmente risulteranno leggermente morbidi e fragili. Una volta freddi si induriscono.
+</p>
+<h3>Decorazione</h3>
+<p align=justify> 
+Fate raffreddare completamente e spolverate con abbondante zucchero a velo. 
+</p>
+<p align=center> 
+<img src="canestre5.jpg" height="400px">
+</p>
+<h2>Conservazione</h2>
+<p align=justify>
+I canestrelli possono essere conservati fino a due settimane se ben chiusi in contenitori ermetici o riposti in una scatola di latta.
+</p>
+</font>
+</div>
+</td></tr></table>
+</p>
+<button onclick="topFunction()" id="top" title="Vai su">Top</button>
+<script>
+var mybutton = document.getElementById("top"); 
+var mymenu = document.getElementById("cre"); 
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+    mymenu.style.top = "0";
+    mymenu.style.position="fixed";
+  } else {
+    mymenu.style.top = "130px";
+    mymenu.style.position="absolute";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+function stampa_id(ele_id) {
+  var nw = window.open();
+  nw.document.write(document.getElementById(ele_id).innerHTML);
+  nw.print();
+  nw.close();
+}
+</script>
+</body>
+</html>

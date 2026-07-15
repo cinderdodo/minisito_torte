@@ -1,0 +1,242 @@
+<html>
+<head> <title>Cantucci</title> 
+
+<style>
+#cre {
+  position: absolute;
+  border: 1px solid white;
+  background-color:rgba(255,200,200,0.5);  
+  width: 100%;
+  height: 45px;
+  top: 130px;
+  left: 0;
+  right: 0;
+  display:block;
+}
+.menu{
+  text-align: center;
+  text-decoration: none;
+  font-family:papyrus;
+  font-size: 25px;
+  color: black;
+}
+.menu:hover{
+color: white;
+}
+#men td:hover {
+background-color:rgba(205, 50, 91,0.5);
+}
+.titolo{
+font-family:mistral;
+color:black;
+font-size:60px;
+}
+
+.logo{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:130px;
+background-image: url('barra.png');
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #cd325b;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.blocco{
+dispay:block;
+height:140px;
+background-color:none;
+}
+
+#top:hover {
+  background-color:white;
+  color:#cd325b;
+}
+#inizio {
+  border-collapse: collapse;
+background-color:#F5C5DB;
+  }
+
+#inizio td {
+  border: 1px solid #372315;
+  padding: 20px;
+}
+
+#inizio tr:hover {
+background-color: #cd325b; color:white;
+}
+
+.butt {
+  background-color: white; 
+  border:2px solid #cd325b;
+  color: black;
+  padding: 11px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+font-family:papyrus;
+}
+
+.butt:hover {
+  background-color: #cd325b;
+  color: white;
+}
+</style>
+</head>
+
+<body 
+background="back2.jpg" marginheight="70px" marginwidth="70px">
+<div class="blocco" ></div>
+<div class="logo"><table width="100%"><tr height="130px"><td width="100%"  align=center class="titolo">Cenere<font size=4>&#174;</font></td></tr></table></div>
+<div id="cre"><table align=center width="100%" id="men"><tr>
+<td width="25%"  align=center> <a href="primapag.html" class="menu"><div width="25%">HOME</div></a></td>
+<td width="25%" align=center> <a href="ricette.html" class="menu"><div width="25%">RICETTE</div></a></td>
+<td width="25%" align=center> <a href="quiz.html" class="menu"><div width="25%">QUIZ</div></a></td>
+<td width="25%" align=center> <a href="eventi.html" class="menu"><div width="25%">EVENTI</div></a></td>
+</tr></table></div>
+<a href="biscotti.html" target="_self"> <img src="freccia1.png" height="90px" width="90px" title="Torna indietro"> </a>
+<p align=center>
+<table background="foglio5.jpg" cellpadding=50px width=85%><tr><td>
+<p align=right><button onclick="stampa_id('da_stampare');" class="butt" title="Ottieni PDF">Stampa</button></p>
+<div id="da_stampare">
+<font face="papyrus" size="4" color="black">
+<h1>Cantucci</h1>
+<h2>Origini</h2>
+<p align=justify>
+L’origine dei cantucci risale almeno al XVI secolo. Il nome sembra derivare da “cantellus”, in latino “pezzo o fetta di pane”,
+ una galletta salata che già i soldati romani consumavano durante le campagne militari. Altri fanno derivare la parola da “canto”,
+ angolo, piccola parte.<br>  
+A partire dalla seconda metà del ‘500, troviamo questi biscotti alla corte dei Medici, anche se pare non
+ contenessero ancora le mandorle. L’Accademia della Crusca a fine ‘600 dà la prima definizione di “cantuccio”: 
+“biscotto a fette, di fior di farina, con zucchero e chiara d’uovo”.<br> 
+Nel XIX secolo Antonio Mattei, pasticciere di Prato,
+ ne mise a punto una ricetta divenuta poi classica, con la quale ricevette numerosi premi a fiere campionarie in Italia
+ e all'estero, tra cui una menzione speciale all'esposizione universale di Parigi del 1867.<br>
+La bottega di "Mattonella" (nome popolare del biscottaio) esiste ancora oggi a Prato ed è considerata la depositaria della tradizione dei cantucci.
+</p>
+
+<font face="papyrus" size="4" color="black">
+<h2>Ricetta</h2>
+<table id="inizio" style=font-family:papyrus>
+<tr><td>Difficoltà</td><td>Media</td></tr>
+<tr><td>Tempo di preparazione</td><td>10 Minuti</td></tr>
+<tr><td>Tempo di cottura</td><td>20 Minuti</td></tr>
+<tr><td>Porzioni</td><td>40 Pezzi</td></tr>
+<tr><td>Metodo di cottura</td><td>Forno</td></tr>
+<tr><td>Cucina</td><td>Italiana(Toscana)</td></tr>
+</table>
+<br>
+
+<h2>Ingredienti</h2>
+<h3>Per l'impasto</h3>
+<ul type="circle">
+<li>280g Farina 00</li>
+<li>150g Zucchero semolato</li>
+<li>Vaniglia</li>
+<li>2 Uova</li>
+<li>un pizzico di Sale</li>
+<li>1 cucchiaino di Ammoniaca per dolci</li>
+<li>Buccia gratuggiata 1 arancia</li>
+<li>Buccia gratuggiata 1 limone</li>
+<li>130g Mandorle con la pelle</li>
+</ul>
+    
+<h2>Preparazione dei Cantucci</h2>
+<h3>Impasto</h3>
+<p align=justify>
+Prima di tutto, mescolare insieme con una forchetta uova, zucchero, bucce grattugiate degli agrumi, sale e vaniglia. 
+Aggiungete quindi la farina e l’ammoniaca per dolci.<br>
+Impastate pochi secondi fino ad ottenere un ‘impasto omogeneo. Se attacca alle dita, spolverate un pochino di farina.
+Aggiungete le mandorle con tutta la pelle.<br>
+Impastate bene, dividete l’impasto a metà e con l’aiuto di un pochino di farina realizzate 2 filoncini larghi 3cm circa.<br>
+Importante per avere dei cantucci dalla forma perfetta, non appiattire il filoncino, ma disporlo in una teglia foderata di carta da forno bello tondo
+</p>
+<p align=center>
+<img src="cantucci1.jpg" height="300px">   
+<img src="cantucci2.jpg" height="300px">   
+</p>
+<h3>Cottura</h3>
+<p align=justify>
+Cuocete a 180° nella parte media del forno per circa 15 – 18 minuti il tempo che i filoncini si gonfieranno.<br>
+A questo punto potete affettare con una lama, tarocco o coltello i tozzetti ad uno spessore di circa 1 cm e mezzo – 2 cm.<br>
+Capolvegete i tozzetti e cuocete ancora in forno 4 minuti da una parte; poi girateli e fate cuocere altri  4 minuti dall’altra parte.<br>
+Sfornate e lasciate intiepidire
+</p>
+<p align=center>
+<img src="cantucci3.jpg" height="300px">   
+<img src="cantucci4.jpg" height="300px">   
+</p>
+<p align=justify>
+Appena fuori dal forno sembreranno duri, invece lasciate passare qualche ora e vedrete al morso risulteranno fragranti e morbidi.
+</p>
+<p align=center> 
+<img src="cantucci.jpg" height="400px">
+</p>
+<h2>Conservazione</h2>
+<p align=justify>
+I cantucci si conservano a lungo: teneteli in una scatola di latta ben chiusa, al riparo dall’umidità: resteranno fragranti fino a 30 giorni.<br>
+Ricordatevi però che come tutti i biscotti temono l’umidità: se dovessero ammorbidirsi, purtroppo dovrete buttarli. 
+</p>
+</font>
+</div>
+</td></tr></table>
+</p>
+<button onclick="topFunction()" id="top" title="Vai su">Top</button>
+<script>
+var mybutton = document.getElementById("top"); 
+var mymenu = document.getElementById("cre"); 
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+  if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+    mymenu.style.top = "0";
+    mymenu.style.position="fixed";
+  } else {
+    mymenu.style.top = "130px";
+    mymenu.style.position="absolute";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function stampa_id(ele_id) {
+  var nw = window.open();
+  nw.document.write(document.getElementById(ele_id).innerHTML);
+  nw.print();
+  nw.close();
+}
+</script>
+</body>
+</html>

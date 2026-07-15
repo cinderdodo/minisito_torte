@@ -1,0 +1,289 @@
+<html>
+<head> <title>Cannolo</title> 
+
+<style>
+#cre {
+  position: absolute;
+  border: 1px solid white;
+  background-color:rgba(255,200,200,0.5);  
+  width: 100%;
+  height: 45px;
+  top: 130px;
+  left: 0;
+  right: 0;
+  display:block;
+}
+.menu{
+  text-align: center;
+  text-decoration: none;
+  font-family:papyrus;
+  font-size: 25px;
+  color: black;
+}
+.menu:hover{
+color: white;
+}
+#men td:hover {
+background-color:rgba(205, 50, 91,0.5);
+}
+.titolo{
+font-family:mistral;
+color:black;
+font-size:60px;
+}
+
+.logo{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:130px;
+background-image: url('barra.png');
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #cd325b;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.blocco{
+dispay:block;
+height:140px;
+background-color:none;
+}
+
+#top:hover {
+  background-color:white;
+  color:#cd325b;
+}
+#inizio {
+  border-collapse: collapse;
+background-color:#F5C5DB;
+}
+
+#inizio td {
+  border: 1px solid #372315;
+  padding: 20px;
+}
+
+
+#inizio tr:hover {
+background-color: #cd325b; color:white;
+}
+
+.butt {
+  background-color: white; 
+  border:2px solid #cd325b;
+  color: black;
+  padding: 11px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+font-family:papyrus;
+}
+
+.butt:hover {
+  background-color: #cd325b;
+  color: white;
+}
+</style>
+</head>
+
+<body background="back1.jpg" marginheight="70px" marginwidth="70px">
+<div class="blocco" ></div>
+<div class="logo"><table width="100%"><tr height="130px"><td width="100%"  align=center class="titolo">Cenere<font size=4>&#174;</font></td></tr></table></div>
+<div id="cre"><table align=center width="100%" id="men"><tr>
+<td width="25%"  align=center> <a href="primapag.html" class="menu"><div width="25%">HOME</div></a></td>
+<td width="25%" align=center> <a href="ricette.html" class="menu"><div width="25%">RICETTE</div></a></td>
+<td width="25%" align=center> <a href="quiz.html" class="menu"><div width="25%">QUIZ</div></a></td>
+<td width="25%" align=center> <a href="eventi.html" class="menu"><div width="25%">EVENTI</div></a></td>
+</tr></table></div>
+<a href="pasticcini.html" target="_self"> <img src="freccia1.png" height="90px" width="90px" title="Torna indietro"> </a>
+<p align=center>
+<table background="foglio5.jpg" cellpadding=50px width=85%><tr><td>
+<p align=right><button onclick="stampa_id('da_stampare');" class="butt" title="Ottieni PDF">Stampa</button></p>
+<div id="da_stampare">
+<font face="papyrus" size="4" color="black">
+<h1>Cannolo Siciliano</h1>
+<h2>Origini</h2>
+<p align=justify>
+ Il Cannolo siciliano risale ai tempi alla dominazione araba in Sicilia (dal 827 al 1091) nati dalle 
+mani delle suore di un convento nei pressi di Caltanissetta; inizialmente preparati in occasione del Carnevale.<br>
+ Ben presto si diffusero in tutta la Italia, diventando il dolce da preparare in tutte le occasioni.<br>
+ Oggi sono uno dei dolci più importanti della cultura Siciliana.
+</p>
+
+<font face="papyrus" size="4" color="black">
+<h2>Ricetta</h2>
+<table id="inizio" style=font-family:papyrus>
+<tr><td>Difficoltà</td><td>Media</td></tr>
+<tr><td>Tempo di preparazione</td><td>60 Minuti</td></tr>
+<tr><td>Tempo di cottura</td><td>10 Minuti</td></tr>
+<tr><td>Porzioni</td><td>16 Pezzi</td></tr>
+<tr><td>Metodo di cottura</td><td>Forno</td></tr>
+<tr><td>Cucina</td><td>Italiana (Sicilia)</td></tr>
+</table>
+<br>
+
+<h2>Ingredienti</h2>
+<h3>Per la scorza</h3>
+<ul type="circle">
+<li>250g Farina 00 + un pò per spolverare</li>
+<li>50g Zucchero semolato</li>
+<li>30g Strutto (in alternativa burro morbido)</li>
+<li>Vaniglia (1 bustina oppure 1 cucchiaio di estratto)</li>
+<li>3g Sale</li>
+<li>Olio per friggere</li>
+<li>1 cucchiaino raso di Cacao amaro in polvere</li>
+<li>1 bicchierino di Marsala (circa 60 gr)</li>
+<li>un cucchiaio di Aceto di vino bianco</li>
+<li>Cannella in polvere</li>
+</ul> 
+ 
+<h3>Per il ripieno</h3>
+<ul type="circle">
+<li>800g Ricotta di pecora perfettamente sgocciolata</li>
+<li>300g Zucchero semolato</li>
+<li>120g Gocce di cioccolato fondente</li>
+</ul>
+
+    
+<h3>Per decorare</h3>
+<ul type="circle">
+<li>Zucchero a velo</li>
+<li>Granella di pistacchi</li>
+<li>Arancia candita</li>
+<li>Gocce di cioccolato</li>
+<li>Ciliege candite</li>
+</ul>
+    
+<h2>Preparazione del Cannolo Siciliano</h2>
+
+<h3>Ripieno</h3>
+<p align=justify>
+Prima di tutto, realizzate la crema di ricotta.<br>
+Sgocciolate la ricotta alla perfezione, strizzandola in un canovaccio di tela. Trasferite la ricotta asciutta 
+in una ciotola, aggiungete lo zucchero, frullate con un minipimer, in modo da ottenere un composto cremoso e vellutato senza grumi.<br>
+Aggiungete le gocce di cioccolato. Girate e riponete in frigo per almeno 4 – 5 h.
+</p>
+<h3>Cialda</h3>
+<p align=justify>
+Lavorate con le fruste lo strutto, la vaniglia, la cannella, il sale e lo zucchero, fino ad ottenere un composto spumoso.
+ Aggiungete l’uovo, lavorate ancora con le fruste per amalgamare il tutto.<br>
+Poi aggiungete la farina precedentemente setacciata con cacao, a poco alla volta alternandola con vino e marsala. Fino ad
+esaurimento ingredienti e fino a raggiungere un impasto lavorabile e compatto, se necessario spolverate con un pizzico di farina.<br>
+Sigillare con una pellicola e lasciate riposare in frigo per almeno 1 h.</p>
+<p align=center>
+<img src="cannolo.jpg" height="300px" >
+</p>
+<h3>Realizzare la forma del Cannolo</h3>
+<p align=justify>
+Trascorso il tempo indicato, dividete l’impasto in 3 – 4 parti.
+Stendetelo sottilissimo ad uno spessore di 2 – 3 mm con l’aiuto di una macchinetta della pasta.<br>
+Dovrete procedere ripiegando l’impasto su se stesso più volte, con aggiunta di farina
+fino ad ottenere una sfoglia compatta e che non attacca più.<br>
+Se non avete la macchinetta della pasta, potete procedere a mano con un mattarello, ci vorrà più tempo e più fatica 
+per assottigliare la sfoglia.<br>
+Dividete la sfoglia in quadrati di circa 10 x 10 cm. Attenzione che la misura del quadrato dev’essere grande come il cilindro di alluminio; non deve uscire fuori, altrimenti dopo cotto, avrete difficoltà a sfilarlo.<br>
+Se state usando dei cilindri più piccoli, naturalmente realizzerete dei quadrati di 7 – 8 cm .
+Posizionate al centro di ogni quadrato il cilindro.
+</p>
+<p align=center>
+<img src="cannolo1.jpg" height="300px">
+</p>
+<p align=justify> 
+Pennellate con il resto dell’uovo sbattuto.
+</p>
+<p align=center> 
+<img src="cannolo2.jpg" height="300px">
+</p>
+<p align=justify> 
+Sigillate il cannolo, accoppiando l’altro lembo sull’uovo.<br>
+Realizzate in questo modo tutte le scorze dei vostri cannoli siciliani.<br> Ponete in frigo per almeno 1 ora.
+Questo passaggio in frigo è fondamentale. I cilindri devono risultare freddi per reggere l’elevata temperatura della frittura.
+</p>
+<p align=center> 
+<img src="cannolo3.jpg" height="300px" >
+</p>
+<h3>Cottura delle Scorze</h3>
+<p align=justify> 
+Caldate l’olio per friggere in un pentolino a bordi alti, friggete una cialda per volta.
+Basterà 1 minuto circa, girandola un paio di volte. Vedrete che salirà subito a galla riempiendosi di bolle.<br> 
+Scolate su carta assorbente ed eliminate subito la cannula. Se aspettate troppo tempo resteranno incastrate.<br>
+Lasciate quindi raffreddare le cialde pronte e cuocete tutte le altre.<br>
+Quando le cialde sono pronte, riempite i cannoli con la crema di ricotta e gocce di cioccolato. Prima un lato, poi un altro.
+</p>
+<p align=center> 
+<img src="cannolo4.jpg" height="300px">
+</p>
+<h3>Decorazione</h3>
+<p align=justify>
+Completate aggiungendo sulle punte di crema la granella di frutta secca, gocce di cioccolato, scorze di arancia candita, ciliegie candite. Spolverate di zucchero a velo e servite
+</p>
+<p align=center> 
+<img src="cannolo7.jpg" height="400px">
+</p>
+<h2>Conservazione</h2>
+<p align=justify>
+In frigorifero per 1 giorno se sono già farciti.<br>
+Il mio consiglio è di realizzare le cialde, lasciarle a temperatura ambiente e riempire con la crema solo quando
+ decidiate di servire i vostri cannoli.<br>Una volta riempiti, le cialde dopo 1 giorno, tendono ad ammorbidirsi.
+</p>
+</font>
+</div>
+</td></tr></table>
+</p>
+<button onclick="topFunction()" id="top" title="Vai su">Top</button>
+<script>
+var mybutton = document.getElementById("top"); 
+var mymenu = document.getElementById("cre"); 
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+    mymenu.style.top = "0";
+    mymenu.style.position="fixed";
+  } else {
+    mymenu.style.top = "130px";
+    mymenu.style.position="absolute";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+function stampa_id(ele_id) {
+  var nw = window.open();
+  nw.document.write(document.getElementById(ele_id).innerHTML);
+  nw.print();
+  nw.close();
+}
+</script>
+</body>
+</html>

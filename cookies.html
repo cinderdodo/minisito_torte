@@ -1,0 +1,255 @@
+<html>
+<head> <title>Cookies</title> 
+
+<style>
+#cre {
+  position:absolute;
+  border: 1px solid white;
+  background-color:rgba(255,200,200,0.5);  
+  width: 100%;
+  height: 45px;
+  top: 130px;
+  left: 0;
+  right: 0;
+  display:block;
+}
+.menu{
+  text-align: center;
+  text-decoration: none;
+  font-family:papyrus;
+  font-size: 25px;
+  color: black;
+}
+.menu:hover{
+color: white;
+}
+#men td:hover {
+background-color:rgba(205, 50, 91,0.5);
+}
+.titolo{
+font-family:mistral;
+color:black;
+font-size:60px;
+}
+
+.logo{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:130px;
+background-image: url('barra.png');
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #cd325b;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.blocco{
+dispay:block;
+height:140px;
+background-color:none;
+}
+
+#top:hover {
+  background-color:white;
+  color:#cd325b;
+}
+#inizio {
+  border-collapse: collapse;
+background-color:#F5C5DB; 
+}
+
+#inizio td {
+  border: 1px solid #372315;
+  padding: 20px;
+}
+
+#inizio tr:hover {
+background-color: #cd325b; color:white;
+}
+
+.butt {
+  background-color: white; 
+  border:2px solid #cd325b;
+  color: black;
+  padding: 11px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+font-family:papyrus;
+}
+
+.butt:hover {
+  background-color: #cd325b;
+  color: white;
+}
+</style>
+</head>
+
+<body background="back2.jpg" marginheight="70px" marginwidth="70px">
+<div class="blocco" ></div>
+<div class="logo"><table width="100%"><tr height="130px"><td width="100%"  align=center class="titolo">Cenere<font size=4>&#174;</font></td></tr></table></div>
+<div id="cre"><table align=center width="100%" id="men"><tr>
+<td width="25%"  align=center> <a href="primapag.html" class="menu"><div width="25%">HOME</div></a></td>
+<td width="25%" align=center> <a href="ricette.html" class="menu"><div width="25%">RICETTE</div></a></td>
+<td width="25%" align=center> <a href="quiz.html" class="menu"><div width="25%">QUIZ</div></a></td>
+<td width="25%" align=center> <a href="eventi.html" class="menu"><div width="25%">EVENTI</div></a></td>
+</tr></table></div>
+<a href="biscotti.html" target="_self"> <img src="freccia1.png" height="90px" width="90px" title="Torna indietro"> </a>
+<p align=center>
+<table background="foglio5.jpg" cellpadding=50px width=85%><tr><td>
+<p align=right><button onclick="stampa_id('da_stampare');" class="butt" title="Ottieni PDF">Stampa</button></p>
+<div id="da_stampare">
+<font face="papyrus" size="4" color="black">
+<h1>Cookies (Chocolate Chip Cookies)</h1>
+<h2>Origini</h2>
+<p align=justify>
+Una bontà irresistibile nata per caso negli anni ’30 grazie alla signora Ruth, la padrona dell’albergo
+ “Toll House Inn”.<br>
+Quel giorno la donna aveva terminato il cacao in polvere che utilizzava per preparare 
+i suoi biscotti al burro; così aggiunse all’impasto del cioccolato tritato immaginando che si sarebbe sciolto.
+Ma pezzi di cioccolato rimasero intatti. E quando i clienti assaggiarono i nuovi Cookies ne rimasero entusiasti.<br>
+Fu così che in breve tempo, i Cookies con gocce di cioccolato divennero i Biscotti più famosi d’America e uno dei simboli
+della pasticceria americana nel mondo.
+</p>
+
+<font face="papyrus" size="4" color="black">
+<h2>Ricetta</h2>
+<table id="inizio" style=font-family:papyrus>
+<tr><td>Difficoltà</td><td>Media</td></tr>
+<tr><td>Tempo di preparazione</td><td>30 Minuti(+ tempi di raffreddamento)</td></tr>
+<tr><td>Tempo di cottura</td><td>12 Minuti </td></tr>
+<tr><td>Porzioni</td><td>45 Pezzi</td></tr>
+<tr><td>Metodo di cottura</td><td>Forno</td></tr>
+<tr><td>Cucina</td><td>Americana</td></tr>
+</table>
+<br>
+
+<h2>Ingredienti</h2>
+<h3>Per l'impasto</h3>
+<ul type="circle">
+<li>350g Farina 00</li>
+<li>150g Zucchero bianco semolato</li>
+<li>190g Burro</li>
+<li>un pizzico di Sale</li>
+<li>2 Uova</li>
+<li>1 cucchiaio di Estratto di vaniglia</li>
+<li>Sale in fiocchi per guarnire</li>
+<li>200g Gocce di cioccolato</li>
+<li>200g Brown sugar (oppure zucchero di canna grezzo di alta qualità)</li>
+<li>1 cucchiaino colmo di Bicarbonato di sodio</li>
+</ul>
+    
+<h2>Preparazione dei Cookies</h2>
+
+<h3>Impasto</h3>
+<p align=justify>
+Prima di tutto sciogliete il burro a bagnomaria e lasciatelo completamente raffreddare (se avete tempo 
+a temperatura ambiente, finchè non ritorna ad uno stato cremoso.
+Se avete fretta, ponetelo 20 min in frigo,
+girando di tanto in tanto, affinchè non diventi un pezzo unico ma cremoso).<br> 
+Poi in una ciotola grande versate il burro cremoso, il brown sugar e lo zucchero bianco.
+Montate con le fruste elettriche e aggiungete anche il sale e la vaniglia. Dovrete ottenere un composto cremoso, uniforme,
+lo zucchero deve sciogliersi e non risultare in grani.<br> 
+Aggiungete quindi le uova una alla volta e montate sempre ad alta velocità. Aggiungete il bicarbonato e montate bene finchè non otterrete un composto spumoso.
+</p>
+<p align=center>
+<img src="cookie1.jpg" height="300px">   
+<img src="cookie2.jpg" height="300px">
+</p>
+<p align=justify>
+Infine aggiungete la farina e le gocce di cioccolato.<br> 
+Mescolate questa volta con una spatola, al fine di ottenere un impasto omogeneo. Ecco pronto l’impasto dei cookies americani.<br>
+Coprite con una pellicola e lasciate riposare in frigo per almeno 2 h 
+nella parte bassa più fredda. Se volete potete lasciarlo anche più a lungo o tutta la notte.
+</p>
+<p align=center>
+<img src="cookie3.jpg" height="300px">
+</p>
+<h3>Formare i Cookies</h3>
+<p align=justify>
+Trascorso il tempo indicato, l’impasto sarà diventato più solido e duro. Staccate delle palline con un dosatore del gelato. 
+Se non lo avete procedete con un cucchiaio riempiendolo per 3/4. Le palline dovranno essere tonde più alte che larghe.<br>
+Sistemate tutte le palline su un tagliere e aggiungete sulla superficie (anche laterale) di ogni pallina, delle gocce di cioccolato.<br>
+Quando avrete realizzato tutte le palline, riponete il tagliare in freezer per circa 2h finchè le palline non si solidificano completamente.<br>
+Quando le palline sono pronte, disponetene 6 in una teglia foderata di carta da forno.
+</p>
+<p align=center>
+<img src="cookie4.jpg" height="300px">
+<img src="cookie5.jpg" height="300px">
+</p>
+<h3>Cottura</h3>
+<p align=justify> 
+Cuocete in forno ben caldo, nella parte media del forno a 170° lasciate cuocere 12 minuti di orologio. Quando li tirate fuori
+si saranno allargati sulla teglia e saranno morbidi.<br> 
+Aggiungete subito sale in fiocchi e lasciate raffreddare su un piano di marmo oppure gratella.<br>
+Ecco pronti i vostri cookies con gocce di cioccolato dalla consistenza morbida dentro croccante fuori.
+</p>
+<p align=center> 
+<img src="cookie.jpg" height="400px">
+</p>
+
+<h2>Conservazione</h2>
+<p align=justify>
+Potete conservarli, una volta raffreddati, in una scatola di latta. Si conserveranno per circa 3 settimane.
+</p>
+</font>
+</div>
+</td></tr></table>
+</p>
+<button onclick="topFunction()" id="top" title="Vai su">Top</button>
+<script>
+var mybutton = document.getElementById("top"); 
+var mymenu = document.getElementById("cre"); 
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+    mymenu.style.top = "0";
+    mymenu.style.position="fixed";
+  } else {
+    mymenu.style.top = "130px";
+    mymenu.style.position="absolute";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+function stampa_id(ele_id) {
+  var nw = window.open();
+  nw.document.write(document.getElementById(ele_id).innerHTML);
+  nw.print();
+  nw.close();
+}
+</script>
+</body>
+</html>

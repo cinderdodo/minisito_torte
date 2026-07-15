@@ -1,0 +1,260 @@
+<html>
+<head> <title>Cannoncino</title> 
+
+<style>
+#cre {
+  position:absolute;
+  border: 1px solid white;
+  background-color:rgba(255,200,200,0.5);  
+  width: 100%;
+  height: 45px;
+  top: 130px;
+  left: 0;
+  right: 0;
+  display:block;
+}
+.menu{
+  text-align: center;
+  text-decoration: none;
+  font-family:papyrus;
+  font-size: 25px;
+  color: black;
+}
+.menu:hover{
+color: white;
+}
+#men td:hover {
+background-color:rgba(205, 50, 91,0.5);
+}
+.titolo{
+font-family:mistral;
+color:black;
+font-size:60px;
+}
+
+.logo{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:130px;
+background-image: url('barra.png');
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #cd325b;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.blocco{
+dispay:block;
+height:140px;
+background-color:none;
+}
+
+#top:hover {
+  background-color:white;
+  color:#cd325b;
+}
+#inizio {
+  border-collapse: collapse;
+background-color:#F5C5DB;
+}
+
+#inizio td {
+  border: 1px solid #372315;
+  padding: 20px;
+}
+
+
+#inizio tr:hover {
+background-color: #cd325b; color:white;
+}
+
+.butt {
+  background-color: white; 
+  border:2px solid #cd325b;
+  color: black;
+  padding: 11px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+font-family:papyrus;
+}
+
+.butt:hover {
+  background-color: #cd325b;
+  color: white;
+}
+</style>
+</head>
+
+<body 
+background="back1.jpg"
+marginheight="70px" marginwidth="70px">
+<div class="blocco" ></div>
+<div class="logo"><table width="100%"><tr height="130px"><td width="100%" align=center class="titolo">Cenere<font size=4>&#174;</font></td></tr></table></div>
+<div id="cre"><table align=center width="100%" id="men"><tr>
+<td width="25%"  align=center> <a href="primapag.html" class="menu"><div width="25%">HOME</div></a></td>
+<td width="25%" align=center> <a href="ricette.html" class="menu"><div width="25%">RICETTE</div></a></td>
+<td width="25%" align=center> <a href="quiz.html" class="menu"><div width="25%">QUIZ</div></a></td>
+<td width="25%" align=center> <a href="eventi.html" class="menu"><div width="25%">EVENTI</div></a></td>
+</tr></table></div>
+<a href="pasticcini.html" target="_self"> <img src="freccia1.png" height="90px" width="90px" title="Torna indietro"> </a>
+<p align=center>
+<table background="foglio5.jpg" cellpadding=50px width=85%><tr><td>
+<p align=right><button onclick="stampa_id('da_stampare');" class="butt" title="Ottieni PDF">Stampa</button></p>
+<div id="da_stampare">
+<font face="papyrus" size="4" color="black">
+<h1>Cannoncino alla Panna</h1>
+<h2>Origini</h2>
+<p align=justify>
+Le sue origini sono, senza ombra di dubbio piemontesi, anche se non è possibile attribuirne con certezza la paternità.<br>
+La sua diffusione risale al periodo della Belle Epoque (fine Ottocento, primi Novecento) e originariamente questo piccolo
+ bocconcino di sfoglia veniva farcito con Zabaione e chiuso con granella di nocciole.<br> 
+Se la farcitura allo zabaione resta un must per estimatori, il cannoncino oggi più consumato è quello ripieno di crema pasticciera e chiuso con pan di Spagna 
+sbriciolato.<br> 
+La sua diffusione da nord a sud esplode nel secondo dopoguerra e oggi è diventato un vero e proprio simbolo della pasticceria italiana classica, un dolce delizioso e alla portata di tutti che non può mancare nelle occasioni speciali o sulle tavole della domenica.
+</p>
+
+<font face="papyrus" size="4" color="black">
+<h2>Ricetta</h2>
+<table id="inizio" style=font-family:papyrus>
+<tr>
+<td>Difficoltà</td><td>Facile</td></tr>
+<tr><td>Tempo di preparazione</td><td>30 Minuti</td></tr>
+<tr><td>Tempo di cottura</td><td>20 Minuti</td></tr>
+<tr><td>Porzioni</td><td>4/6 Porzioni</td></tr>
+<tr><td>Metodo di cottura</td><td>Forno</td></tr>
+<tr><td>Cucina</td><td>Italiana</td></tr>
+</table>
+<br>
+
+<h2>Ingredienti</h2>
+<h3>Per la base</h3>
+<ul type="circle">
+<li>1 rotolo di Pasta sfoglia rettangolare</li>
+<li>Burro per spennellare</li>
+<li>Zucchero semolato extrafine</li>
+</ul>
+
+<h3>Per il riempimento</h3>
+<ul type="circle">
+<li>250g Panna fresca</li>
+<li>100g Yogurt greco</li>
+<li>3 cucchiai di Zucchero a velo</li>
+</ul>
+    
+<h3>Per decorare</h3>
+<ul type="circle">
+<li>40g Pistacchi tritati</li>
+</ul>
+    
+<h2>Preparazione dei Cannoncini alla Panna </h2>
+
+<h3>Formazione dei Cannoncini</h3>
+<p align=justify>
+Per preparare i cannoncini alla panna, stendete la pasta sfoglia sulla superficie di lavoro e, utilizzando 
+una rotella tagliapasta, ricavate tante strisce della larghezza di 2 cm e circa 30 cm di lunghezza.<br>
+Formate i cannoncini arrotolandole, una alla volta, sugli appositi cannelli. Incominciate dalla parte più larga,
+sovrapponendo la sfoglia e facendo una leggera pressione.
+</p>
+<p align=center>
+<img src="cannon.jpg" height="225px"> 
+</p>
+<h3>Cottura</h3>
+<p align=justify>
+Disponete i cannoncini su una teglia rivestita di carta forno, spennellateli con il burro fuso (escludendo la zona a contatto
+ con la placca) e cospargeteli con dello zucchero semolato.<br>
+Cuoceteli nel forno già caldo a 200° per circa 20 minuti.
+</p>
+<p align=center>
+<img src="cannon1.jpg" height="225px">
+</p>
+
+<h3>Farcitura</h3>
+<p align=justify> 
+Nel frattempo, in una ciotola montate la panna con uno sbattitore elettrico. Unite lo yogurt greco, lo zucchero a velo e mescolate delicatamente fino a ottenere una crema omogenea.
+</p>
+<p align=center> 
+<img src="cannon2.jpg" height="225px">
+<img src="cannon3.jpg" height="225px">
+</p>
+<p align=justify> 
+
+Sfornate i cannoncini, fateli intiepidire e rimuovete i cannelli. Al momento di servire trasferite la crema in un
+ sac à poche con bocchetta a stella da 15 mm e farcite i cannoncini.</p>
+<p align=center> 
+<img src="cannon4.jpg" height="225px">
+<img src="cannon5.jpg" height="225px">
+</p>
+<p align=justify>
+Servite i cannoncini alla panna decorati con pistacchi tritati .
+</p>
+<p align=center> 
+<img src="cannon7.jpg" height="400px">
+</p>
+<h2>Conservazione</h2>
+<p align=justify>
+Ptete conservare i cannoncini di sfoglia per circa 2 giorni in frigorifero, anche se una volta farciti tenderanno ad assorbire l’umidità della crema perdendo progressivamente la loro friabilità e croccantezza.<br>
+Potete conservare i cannoncini cotti ma non farciti in una scatola di latta per 4-5 giorni e poi farcirli al momento: così i cannoncini risulteranno fragranti come appena fatti.<br>
+Si sconsiglia la congelazione.
+</p>
+</font>
+</div>
+</td></tr></table>
+</p>
+<button onclick="topFunction()" id="top" title="Vai su">Top</button>
+<script>
+var mybutton = document.getElementById("top"); 
+var mymenu = document.getElementById("cre"); 
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+    mymenu.style.top = "0";
+    mymenu.style.position="fixed";
+  } else {
+    mymenu.style.top = "130px";
+    mymenu.style.position="absolute";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+function stampa_id(ele_id) {
+  var nw = window.open();
+  nw.document.write(document.getElementById(ele_id).innerHTML);
+  nw.print();
+  nw.close();
+}
+</script>
+</body>
+</html>

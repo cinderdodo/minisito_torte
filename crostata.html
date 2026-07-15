@@ -1,0 +1,306 @@
+<html>
+<head> <title>Crostata</title> 
+
+<style>
+#cre {
+  position: absolute;
+  border: 1px solid white;
+  background-color:rgba(255,200,200,0.5);  
+  width: 100%;
+  height: 45px;
+  top: 130px;
+  left: 0;
+  right: 0;
+  display:block;
+}
+.menu{
+  text-align: center;
+  text-decoration: none;
+  font-family:papyrus;
+  font-size: 25px;
+  color: black;
+}
+.menu:hover{
+color: white;
+}
+#men td:hover {
+background-color:rgba(205, 50, 91,0.5);
+}
+.titolo{
+font-family:mistral;
+color:black;
+font-size:60px;
+}
+
+.logo{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:130px;
+background-image: url('barra.png');
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #cd325b;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.blocco{
+dispay:block;
+height:140px;
+background-color:none;
+}
+
+#top:hover {
+  background-color:white;
+  color:#cd325b;
+}
+#inizio {
+  border-collapse: collapse;
+background-color:#F5C5DB;
+}
+
+#inizio td {
+  border: 1px solid #372315;
+  padding: 20px;
+}
+
+#inizio tr:hover {
+background-color: #cd325b; color:white;
+}
+
+.butt {
+  background-color: white; 
+  border:2px solid #cd325b;
+  color: black;
+  padding: 11px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+font-family:papyrus;
+}
+
+.butt:hover {
+  background-color: #cd325b;
+  color: white;
+}
+</style>
+</head>
+<body background="back.png" marginheight="70px" marginwidth="70px">
+<div class="blocco" ></div>
+<div class="logo"><table width="100%"><tr height="130px"><td width="100%"  align=center class="titolo">Cenere<font size=4>&#174;</font></td></tr></table></div>
+<div id="cre"><table align=center width="100%" id="men"><tr>
+<td width="25%"  align=center> <a href="primapag.html" class="menu"><div width="25%">HOME</div></a></td>
+<td width="25%" align=center> <a href="ricette.html" class="menu"><div width="25%">RICETTE</div></a></td>
+<td width="25%" align=center> <a href="quiz.html" class="menu"><div width="25%">QUIZ</div></a></td>
+<td width="25%" align=center> <a href="eventi.html" class="menu"><div width="25%">EVENTI</div></a></td>
+</tr></table></div>
+<a href="torte.html" target="_self"> <img src="freccia1.png" height="90px" width="90px" title="Torna indietro"> </a>
+<p align=center>
+<table background="foglio5.jpg" cellpadding=50px width=85%><tr><td>
+<p align=right>
+<button onclick="stampa_id('da_stampare');" class="butt" title="Ottieni PDF">Stampa</button></p>
+<div id="da_stampare">
+<font face="papyrus" size="4" color="black">
+
+<h1>Crostata alla confettura di Fragole</h1>
+
+<h2>Origini</h2>
+<p align=justify>
+la crostata potrebbe essere il dolce più antico della tradizione pasticcera italiana.<br>
+La sua storia non è facilmente databile, ma pare si possa ricondurre addirittura all’epoca precristiana.<br>
+Sebbene intorno alla storia della crostata aleggino diverse leggende, vedi il mito pagano della sirena Partenope che narra 
+come il dolce le sia stato regalato dagli dei in omaggio al suo canto soave, sembra che il merito dell’invenzione
+di questa torta sia da attribuire ad una suora del convento di S. Gregorio Armeno.<br>
+Questo dolce di origine “povera” ebbe molta fortuna nel corso della storia, tanto da arrivare anche sulle tavole
+dei nobili fino a raggiungere la corte dei Borboni.<br> 
+Si narra infatti che fosse l’unico dolce in grado di far sorridere la regina Maria Teresa D’Austria, 
+moglie del re Ferdinando II di Borbone, soprannominata “la Regina che non sorride mai”.</p>
+<h2>Ricetta</h2>
+<table id="inizio" style=font-family:papyrus>
+<tr>
+<td>Difficoltà</td><td>Facile</td></tr>
+<tr><td>Tempo di preparazione</td><td>40 Minuti</td></tr>
+<tr><td>Tempo di cottura</td><td>30 Minuti</td></tr>
+<tr><td>Porzioni</td><td>1o Persone</td></tr>
+<tr><td>Metodo di cottura</td><td>Forno</td></tr>
+<tr><td>Cucina</td><td>Italiana</td></tr>
+</table>
+<br>
+
+<h2>Ingredienti</h2>
+Quantità per 1 teglia da 22cm <br>
+<h3>Pasta Frolla</h3>
+<ul type="circle">
+<li>300g Farina 00</li>
+<li>150g Zucchero</li>
+<li>100g Burro freddo</li>
+<li>1 cucchiaino di Lievito per dolci</li>
+<li>un pizzico di Sale</li>
+<li>1 Uovo</li>
+<li>1 Tuorlo d'uovo</li>
+</ul>
+
+<h3>Confettura di Fragole</h3>
+Quantità per 3 barattoli di marmellata di fragole da 250/300 ml con tappo twist off
+<ul type="circle">
+<li>1kg e 1/2 di Fragole (peso al netto di scarti)</li>
+<li>800g Zucchero</li>
+<li>1 Limone grande + 1/2 di media dimensione (da cui ricavare succo e buccia)</li>
+</ul>
+
+    
+<h2>Preparazione della Crostata alla confettura di Fragole</h2>
+
+<h3>Confettura di Fragole</h3>
+<h4>Pulitura Fragole</h4>
+<p align=justify>
+Lavate le fragole senza lasciarle a bagno, per evitare che assorbano troppa acqua.<br>
+Asciugatele con uno strofinaccio pulito, tamponando senza fare troppe pressioni.<br>
+Eliminate il ciuffo verde e tagliate ogni fragola in 2 o 4 parti
+</p>
+<p align=center> 
+<img src="mar1.jpg" height="300px"   >
+</p>
+
+<h4>Marinatura di Fragole, Zucchero e Limone</h4>
+<p align=justify>
+Servitevi di un recipiente piuttosto capiente, aggiungetevi le fragole pulite e tagliate,
+ricavate il succo di un limone e mezzo e filtratelo accuratamente con un passino a fori stretti.<br> 
+Aggiungete alle fragole lo zucchero, il succo di limone e le bucce ricavate dei limoni premuti e precedentemente lavati.<br> 
+Mescolate bene affinchè le fragole si condiscano. <br>
+Coprite la ciotola con una pellicola e lasciate in frigo per 1 giorno oppure per almeno 2 h. 
+</p>
+<p align=center>
+<img src="mar2.jpg" height="300px"  >
+    <img src="mar3.jpg" height="300px"   >
+</p>
+
+<h4>Cottura Confettura</h4>
+<p align=justify>
+Trascorso il tempo che avete scelto per la marinatura, trasferite il composto di fragole, zucchero e limone in una pentola capiente, scartando da parte le bucce.<br>
+Se avete aspettato solo 2 h il composto non sarà cambiato molto. Al contrario se avete lasciato le fragole a marinare per 1 giorno, il composto risulterà decisamente più liquido e più profumato.<br>
+Ponete sul fuoco a fiamma moderata e lasciate bollire.<br>
+Dal momento dell’ebollizione, lasciate cuocere 30/ 40 minuti a fuoco basso, servendovi di una schiumarola da cucina per eliminare eventuale schiuma in eccesso che si formerà in fase di cottura.<br> 
+Girate con un cucchiaio di legno costantemente. Piano piano il composto si rapprenderà, diminuendo anche un pò di volume.<br>
+Il risultato finale è  una Composta fatta di succo gelatinoso e pezzi<br>
+A questo punto lasciate intiepidire 10 minuti girando di tanto in tanto il composto.<br>
+Procedete quindi a passare le fragole con un passino a fori medi.  Quest’operazione è fondamentale per ottenere una marmellata uniforme.<br>
+A questo punto riponetela marmellata di fragole ormai intiepidita sul fuoco medio e lasciate cuocere a fiamma dolce per ancora 30 – 35 minuti, in questa seconda fase il composto produrrà pochissima schiuma ad ogni modo se necessario eliminatela.<br>
+Ottenuta la consistenza giusta, allontanate la pentola con la marmellata di fragole dal fuoco e continuate a girare.<br>
+Lasciate assestare un paio di minuti prima di procedere all’invasamento.<br>
+</p>
+<p align=center>
+<img src="mar4.jpg" height="300px"  >
+<img src="mar5.jpg" height="300px"  >
+<img src="mar6.jpg" height="300px"   >
+</p>
+
+<h4>Invasamento Confettura</h4>
+<p align=justify>
+Sterilizzare i vasetti di vetro bollendoli in acqua per almeno 10 minuti e successivamente farli asciugare in forno per 
+circa 10 minuti a 180°.<br>
+Versare il composto ancora bollente nei vasetti appena sterilizzati e perfettamente asciutti.<br>
+Chiuderli con un tappo nuovo e capovolgerli per creare il vuoto. Lasciarli così fino a completo raffreddamento.
+</p>
+<p align=center>
+<img src="mar7.jpg" height="300px"   >
+<img src="mar8.jpg" height="300px"   >
+</p>
+
+<h3>Pasta Frolla</h3>
+<p align=justify>
+Mescolate in una ciotola capiente la farina assieme al lievito, allo zucchero e al sale.
+Quindi aggiungete il burro morbido a pezzetti piccoli oppure grattugiato e lavorate il tutto con la punta delle dita, fino ad ottenere un composto sabbioso.<br>
+Fate una conca al centro del composto e procedete aggiungendo l’uovo e il tuorlo. Impastate il tutto fino ad ottenere una pasta morbida ma non appiccicosa.<br>
+Prendete la pasta frolla, formateci una palla e avvolgetela nella pellicola trasparente alimentare.<br> 
+Fatela riposare in frigorifero per almeno mezz’ora. Passato il tempo, riprendetela e mettetene da parte un terzo.<br>
+</p>
+<p align=center>
+<img src="cro1.jpg" height="300px"  >
+</p>
+
+<h3>Assemblamento</h3>
+<p align=justify>
+Stendete i due terzi rimanenti su carta da forno fino ad ottenere un disco non troppo sottile (3/4 mm di spessore) e di circa 30 cm di diametro.<br> 
+Sollevatelo con tutta la carta e deponetelo in una teglia rotonda di 24 cm di diametro e 3 cm di bordo. <br>
+Rivestite bene i bordi facendo sbordare eventualmente la pasta fuori dalla teglia.
+Tagliate la pasta eccedente il bordo della teglia e aggiungetela a quella messa da parte in precedenza.<br>
+Bucherellate la base della crostata con una forchetta e spalmate la marmellata sul disco di pasta in maniera omogenea.<br>
+Stendete la pasta frolla rimasta e ricavatene, con il taglia pasta liscio o dentellato, delle strisce di circa 2 cm di larghezza.<br> 
+Utilizzate queste strisce di pasta frolla per rifinire il bordo esterno della crostata e per formare la classica gratella centrale.<br>
+Cuocete la crostata alla marmellata in forno ventilato per 30 minuti a 180 °C.<br> 
+</p>
+<p align=center>
+<img src="cro5.jpg" height="300px">
+</p>
+<p align=justify>
+Una volta che si sarà ben dorata in superficie, sfornatela e fatela intiepidire prima di toglierla dalla teglia.
+</p>
+<p align=center>
+<img src="cros.jpg" height="400px">
+</p>
+
+<h2>Conservazione</h2>
+<p align=justify>
+La crostata si può conservare per circa 2 settimane sotto una campana di vetro a temperatura ambiente, in alternativa può essere congelata per circa 2 mesi. 
+</p>
+</font>
+</div>
+</td></tr></table>
+</p>
+<button onclick="topFunction()" id="top" title="Vai su">Top</button>
+<script>
+var mybutton = document.getElementById("top"); 
+var mymenu = document.getElementById("cre"); 
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+    mymenu.style.top = "0";
+    mymenu.style.position="fixed";
+  } else {
+    mymenu.style.top = "130px";
+    mymenu.style.position="absolute";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+function stampa_id(ele_id) {
+  var nw = window.open();
+  nw.document.write(document.getElementById(ele_id).innerHTML);
+  nw.print();
+  nw.close();
+}
+</script>
+</body>
+</html>
